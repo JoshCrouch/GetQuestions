@@ -62,7 +62,7 @@ function addList(Q) {
 }
 
 function setimg() {
-    let src = "Questions/Slide" + Q.toString() + ".PNG";
+    let src = "Slide" + Q.toString() + ".PNG";
     img.src = src;
 }
 
