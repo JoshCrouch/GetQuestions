@@ -17,7 +17,24 @@ img {
     height: 100%;
 }
 
-#getdiv, #skipdiv {
+#unit {
+    margin: 0 20%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #1D1D1D;
+}
+
+.unitlabel {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.unitradio {
+    background-color: #000;
+}
+
+#getdiv, #skipdiv, #ansdiv {
     justify-content: center;
     text-align: center;
     padding: 1rem 0;
@@ -53,4 +70,20 @@ img {
     height: 4.5rem;
 
     background-color: #d1544d;
+}
+
+#ans {
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+
+    background-color: #3160c5;
+    transition: all 0.25s;
+}
+
+#ans:hover {
+    width: 15.5rem;
+    height: 4.5rem;
+
+    background-color: #2b53aa;
 }

@@ -62,7 +62,7 @@ function addList(Q) {
 }
 
 function setimg() {
-    let src = "Slide" + Q.toString() + ".PNG";
+    let src = "Questions/Slide" + Q.toString() + ".PNG";
     img.src = src;
 }
 
@@ -88,4 +88,8 @@ function random(min,max){
 function changeUnit(U) {
     Unit = U;
     console.log(U);
+}
+
+function byebye() {
+    window.location.href="Rick Roll.html"
 }

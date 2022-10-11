@@ -14,23 +14,37 @@
     <h1>Get a Question</h1>
     <div id="getdiv">
         <button onclick="main('Get')" id="get">Get!</button>
-        <br>
-        <label for="Any">Any</label>
-        <input type="radio" name="Unit" id="Any" onclick="changeUnit(0)">
-        <label for="unit3TF">Unit 3 TF</label>
-        <input type="radio" name="Unit" id="unit3TF" onclick="changeUnit(1)" checked="true">
-        <label for="unit4TF">Unit 4 TF</label>
-        <input type="radio" name="Unit" id="unit4TF" onclick="changeUnit(2)">
-        <label for="unit3TA">Unit 3 TA</label>
-        <input type="radio" name="Unit" id="unit3TA" onclick="changeUnit(3)">
-        <label for="unit4TA">Unit 4 TA</label>
-        <input type="radio" name="Unit" id="unit4TA" onclick="changeUnit(4)">
+    </div>
+    <div id="unit">
+        <div>
+            <label for="Any" class="unitlabel">Any</label>
+            <input type="radio" name="Unit" class="unitradio" id="Any" onclick="changeUnit(0)"  checked="true">
+        </div>
+        <div>
+            <label for="unit3TF" class="unitlabel">Unit 3 TF</label>
+            <input type="radio" name="Unit" class="unitradio" id="unit3TF" onclick="changeUnit(1)">
+        </div>
+        <div>
+            <label for="unit4TF" class="unitlabel">Unit 4 TF</label>
+            <input type="radio" name="Unit" class="unitradio" id="unit4TF" onclick="changeUnit(2)">
+        </div>
+        <div>
+            <label for="unit3TA" class="unitlabel">Unit 3 TA</label>
+            <input type="radio" name="Unit" class="unitradio" id="unit3TA" onclick="changeUnit(3)">
+        </div>
+        <div>
+            <label for="unit4TA" class="unitlabel">Unit 4 TA</label>
+            <input type="radio" name="Unit" class="unitradio" id="unit4TA" onclick="changeUnit(4)">
+        </div>
     </div>
     
     <img id="img" src="Empty.png">
     
     <div id="skipdiv">
-        <button onclick="main('Skip')" class="doneskipbtn" id="skip">Skip</button>
+        <button onclick="main('Skip')" id="skip">Skip</button>
+    </div>
+    <div id="ansdiv">
+        <button onclick="byebye()" id="ans">Answer</button>
     </div>
     <script src="app.js"></script>
 </body>
