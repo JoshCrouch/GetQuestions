@@ -1,0 +1,56 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #DDD;
+}
+
+body {
+    background-color: #2D2D2D;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    height: 100%;
+}
+
+#getdiv, #skipdiv {
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#get {
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+
+    background-color: #4bb153;
+    transition: all 0.25s;
+}
+
+#get:hover {
+    width: 15.5rem;
+    height: 4.5rem;
+
+    background-color: #357e3b;
+}
+
+#skip {
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+
+    background-color: #FF6961;
+    transition: all 0.25s;
+}
+
+#skip:hover {
+    width: 15.5rem;
+    height: 4.5rem;
+
+    background-color: #d1544d;
+}
