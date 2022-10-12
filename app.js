@@ -4,7 +4,8 @@
 //Unit4TA (241 - 310)
 
 let img = document.getElementById("img");
-let List = [];
+let List = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,
+    31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60];
 console.log(List);
 
 let Unit = 1;
@@ -27,6 +28,16 @@ function main(Type) {
     }
 
     Q = getQ();
+    for(let i = 0; i < List.length; i++){
+        console.log(Q,i)
+        if(Q === List[i]){
+            console.log(Q, "blocked");
+            Q = getQ();
+        } else {
+            break;
+        }
+    }
+
     setimg(Q);
 
     console.log(Q,List);
@@ -59,6 +70,7 @@ function getQ(){
 
 function addList(Q) {
     List.push(Q);
+
 }
 
 function setimg() {
@@ -66,19 +78,12 @@ function setimg() {
     img.src = src;
 }
 
-function clear(){
-    console.log("cleared")
-    List = [];
-    localStorage.clear;
-    localStorage.setItem("List", []);
-    console.log(window.localStorage.getItem("List", "Goofy")) 
-}
-
-function get(){
-    console.log("get");
-    Q = getQ();
-    addList();
-    setimg();
+function Clear(){
+    if(confirm("This will clear all your repeated questions?")){
+        console.log("cleared");
+    } else {
+        console.log("not cleared");
+    }
 }
 
 function random(min,max){

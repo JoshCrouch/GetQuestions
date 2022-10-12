@@ -6,10 +6,15 @@
 body {
     background-color: #2D2D2D;
     text-align: center;
+    margin: 0;
 }
 
 h1 {
     text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: #1D1D1D;
 }
 
 img {
@@ -23,11 +28,12 @@ img {
     justify-content: space-evenly;
     padding: 1rem;
     background-color: #1D1D1D;
+    vertical-align: middle;
 }
 
 .unitlabel {
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem 0.25rem;
 }
 
 .unitradio {
@@ -70,6 +76,23 @@ img {
     height: 4.5rem;
 
     background-color: #d1544d;
+}
+
+#clear {
+    color: #000;
+    font-size: 2rem;
+    width: 15rem;
+    height: 4rem;
+
+    background-color: #DDD;
+    transition: all 0.25s;
+}
+
+#clear:hover {
+    width: 15.5rem;
+    height: 4.5rem;
+
+    background-color: #AAA;
 }
 
 #ans {
